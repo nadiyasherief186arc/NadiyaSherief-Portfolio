@@ -1,4 +1,4 @@
-# Nadiya Sherief &mdash; Software Tester & QA Engineer Portfolio
+# NadiyaSherief &mdash; Software Tester & QA Engineer Portfolio
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Portfolio-0ea5e9?style=for-the-badge&logo=github)](https://nadiyasherief186arc.github.io/NadiyaSherief-Portfolio/)
 [![Specialization](https://img.shields.io/badge/Specialization-Manual%20%26%20Automation%20Testing-10b981?style=for-the-badge)](https://github.com/nadiyasherief186arc)
