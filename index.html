@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Nadiya Sherief | Software Tester & QA Automation Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Nadiya Sherief, a Computer Science graduate and Software Tester skilled in Manual Testing, Automation Testing (Selenium WebDriver, Playwright, TestNG, POM), API Testing (Postman), and Defect Tracking (JIRA).">
+  <meta name="keywords" content="Nadiya Sherief, Software Tester, QA Engineer, Automation Testing, Selenium WebDriver, Playwright, TestNG, Page Object Model, Manual Testing, JIRA, Postman, JMeter, SQL">
+  <meta name="author" content="Nadiya Sherief">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nadiya Sherief | Software Tester & QA Automation Engineer">
+  <meta property="og:description" content="Explore test automation frameworks, manual test suites, and QA projects by Nadiya Sherief.">
+  <meta property="og:image" content="assets/images/nadiya_sherief.png">
+  <meta property="og:url" content="https://github.com/nadiyasherief186arc/NadiyaSherief-Portfolio">
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230284c7'/><text x='50%' y='55%' font-family='sans-serif' font-weight='800' font-size='48' fill='white' text-anchor='middle' dominant-baseline='middle'>NS</text></svg>">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Backdrop Graphics -->
+  <div class="ambient-background" aria-hidden="true"></div>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="mouse-spotlight" id="mouseSpotlight" aria-hidden="true"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Nadiya Sherief Portfolio Homepage">
+        <div class="brand-monogram">NS</div>
+        <div class="brand-info">
+          <span class="brand-name">Nadiya Sherief</span>
+          <span class="brand-role">Software Tester</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinksMenu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#qa-lab" class="nav-link">QA Lab</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme light or dark mode">
+          <!-- Sun Icon (shown in dark mode to switch to light) -->
+          <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode to switch to dark) -->
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+
+        <button class="mobile-toggle-btn" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ====================================================================
+         SECTION A: HERO SECTION
+         ==================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Content -->
+          <div class="hero-content">
+            <div class="hero-badge-available">
+              <span class="status-pulse"></span>
+              <span>Available for Software Testing &amp; QA Roles</span>
+            </div>
+
+            <h1 class="hero-name">
+              Hi, I'm <span class="text-gradient">Nadiya Sherief</span>
+            </h1>
+
+            <div class="hero-title">
+              <span>Software Tester</span>
+              <span class="title-divider">/</span>
+              <span>QA Automation Engineer</span>
+            </div>
+
+            <p class="hero-bio">
+              Computer Science graduate specialized in robust <strong>Manual &amp; Automation Testing</strong>. Experienced in constructing maintainable Page Object Model (POM) frameworks using <strong>Selenium WebDriver, TestNG, Java, and Playwright</strong>. Passionate about defect prevention, STLC rigor, and delivering rock-solid web software.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#projects" class="btn btn-primary">
+                Explore My Projects
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#resume" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                View My Resume
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <a href="https://github.com/nadiyasherief186arc" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>github.com/nadiyasherief186arc</span>
+              </a>
+              <a href="mailto:nadiyasherief186@gmail.com" class="social-link" title="Direct Email">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <span>nadiyasherief186@gmail.com</span>
+              </a>
+              <span class="social-link" title="Current Location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Kollam, Kerala</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Hero Profile Image & QA Framing -->
+          <div class="hero-visual">
+            <div class="avatar-card-wrapper">
+              <div class="avatar-backdrop-glow"></div>
+              
+              <!-- Floating telemetry badges -->
+              <div class="floating-chip top-left">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <span>POM Framework Architect</span>
+              </div>
+
+              <div class="floating-chip bottom-right">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>100% Test Automation Pass</span>
+              </div>
+
+              <!-- Main Avatar Card -->
+              <div class="avatar-card">
+                <div class="avatar-frame">
+                  <div class="avatar-photo-wrap">
+                    <img src="assets/images/nadiya_sherief.png" alt="Nadiya Sherief - Software Tester Profile Photo" class="avatar-image" width="130" height="154">
+                  </div>
+                  <div class="avatar-qa-badge">
+                    <div>
+                      <div class="badge-text-title">Specialization</div>
+                      <div class="badge-text-val">QA &amp; Test Automation</div>
+                    </div>
+                    <svg class="verified-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                  </div>
+                </div>
+
+                <div class="avatar-footer-meta">
+                  <div class="meta-box">
+                    <div class="meta-label">Degree</div>
+                    <div class="meta-value">B.Tech in CS</div>
+                  </div>
+                  <div class="meta-box">
+                    <div class="meta-label">Primary Tools</div>
+                    <div class="meta-value">Selenium • Java</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY METRICS STRIP -->
+    <section class="metrics-strip" aria-label="Key QA Competency Metrics">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <div class="metric-number">4<span>+</span></div>
+            <div class="metric-label">End-to-End QA Projects</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">100<span>%</span></div>
+            <div class="metric-label">POM Architectural Discipline</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">7<span>+</span></div>
+            <div class="metric-label">Core Automation Tools</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">STLC<span>✓</span></div>
+            <div class="metric-label">Agile &amp; Defect Lifecycle</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION B: ABOUT ME
+         ==================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profile &amp; Background</span>
+          <h2 class="section-title">Driven by Analytical Rigor and Quality Precision</h2>
+          <p class="section-subtitle">Bridging engineering fundamentals with modern software testing methodologies to build fail-safe applications.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Bio Narrative -->
+          <div class="about-bio-col">
+            <p class="about-bio-text">
+              I am a <span class="about-bio-highlight">Computer Science graduate</span> with focused expertise in Manual Testing, Automation Testing, Core Java, Selenium WebDriver, TestNG, and Page Object Model (POM). With a disciplined background from my B.Tech engineering studies and an intensive 3-month Software Testing immersion at Zoople Technologies, I specialize in analyzing Software Requirement Specifications (SRS), uncovering edge cases, and converting business requirements into robust test scenario matrices.
+            </p>
+            <p class="about-bio-text">
+              My technical focus centers on establishing <span class="about-bio-highlight">reliable, maintainable test architectures</span>. By adhering to Object-Oriented Programming (OOP) concepts, I build decoupled automation suites that minimize maintenance overhead, synchronize asynchronously with dynamic web elements via explicit waits, and generate clear defect reports via JIRA.
+            </p>
+
+            <div class="about-detail-rows">
+              <div class="detail-row">
+                <span class="detail-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+                <span class="detail-title">Email:</span>
+                <span class="detail-val">nadiyasherief186@gmail.com</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span class="detail-title">Phone:</span>
+                <span class="detail-val">+91 9447602945</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <span class="detail-title">Location:</span>
+                <span class="detail-val">Kollam, Kerala, India</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                <span class="detail-title">Status:</span>
+                <span class="detail-val" style="color:var(--accent-emerald);">Fresher &bull; Immediate Joiner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- QA Philosophy Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </div>
+                <h3 class="pillar-title">Architectural Test Design</h3>
+              </div>
+              <p class="pillar-desc">
+                Adopting the Page Object Model (POM) pattern to separate web locators from test logic, ensuring high code reusability, modularity, and rapid adaptation to UI changes.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+                </div>
+                <h3 class="pillar-title">End-to-End STLC &amp; Defect Discipline</h3>
+              </div>
+              <p class="pillar-desc">
+                Managing complete Defect Life Cycles in JIRA with precise steps to reproduce, severity mapping, boundary value checks, and regression verification.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <h3 class="pillar-title">Comprehensive Coverage</h3>
+              </div>
+              <p class="pillar-desc">
+                Synthesizing functional UI automation, manual usability validation, Postman API contract testing, and JMeter performance benchmarks for whole-system stability.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION C: TECHNICAL SKILLS
+         ==================================================================== -->
+    <section class="section" id="skills" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Technical Skill Matrix</h2>
+          <p class="section-subtitle">Extracted from hands-on automation frameworks and certified training, categorized by QA domain.</p>
+        </div>
+
+        <div class="skills-category-grid">
+          
+          <!-- Skill Category 1: Automation Testing -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Automation Testing</h3>
+              </div>
+              <span class="skill-cat-badge">Primary</span>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>Selenium WebDriver</span>
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>Core Java (OOPs)</span>
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>Page Object Model (POM)</span>
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>TestNG</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Playwright (TypeScript)</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Maven</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Cucumber (BDD)</span>
+            </div>
+            <p class="skill-highlight-text">
+              Proficient in designing robust automation frameworks with explicit waits, data synchronization, assertions, and modular object repositories.
+            </p>
+          </div>
+
+          <!-- Skill Category 2: Manual Testing -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Manual Testing &amp; STLC</h3>
+              </div>
+              <span class="skill-cat-badge">Core</span>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>Agile Methodology</span>
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>Defect Life Cycle</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>STLC &amp; SDLC</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Test Case &amp; Scenario Design</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Smoke &amp; Sanity Testing</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Functional &amp; UI Testing</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Usability &amp; Compatibility</span>
+            </div>
+            <p class="skill-highlight-text">
+              Strong grasp of test case authoring, requirements trace matrices, boundary value analysis, equivalence partitioning, and exploratory audits.
+            </p>
+          </div>
+
+          <!-- Skill Category 3: API & Performance -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">API &amp; Performance</h3>
+              </div>
+              <span class="skill-cat-badge">Backend</span>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>API Testing - Postman</span>
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>Performance Testing - JMeter</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>HTTP Status Codes</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>JSON Schema Assertions</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Response Latency Metrics</span>
+            </div>
+            <p class="skill-highlight-text">
+              Testing RESTful endpoints, auth token payloads, status code verifications, and running load test plans using Apache JMeter.
+            </p>
+          </div>
+
+          <!-- Skill Category 4: Database & Version Control -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">Database &amp; Tools</h3>
+              </div>
+              <span class="skill-cat-badge">Tooling</span>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>SQL Queries &amp; Validation</span>
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>JIRA Bug Tracking</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Git &amp; GitHub</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Microsoft Excel Test Matrices</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>VS Code &amp; Eclipse IDE</span>
+            </div>
+            <p class="skill-highlight-text">
+              Database verification using SELECT/JOIN queries, Git versioning, defect ticket reporting with lifecycle states, and structured documentation in Excel.
+            </p>
+          </div>
+
+          <!-- Skill Category 5: Core OOP & Testing Paradigms -->
+          <div class="skill-category-card">
+            <div class="skill-card-top">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title">OOP Concepts &amp; Paradigms</h3>
+              </div>
+              <span class="skill-cat-badge">Computer Science</span>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>Inheritance &amp; Polymorphism</span>
+              <span class="skill-pill featured"><span class="skill-pill-bullet"></span>Encapsulation &amp; Abstraction</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Constructors &amp; Static Members</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>Explicit &amp; Implicit Waits</span>
+              <span class="skill-pill"><span class="skill-pill-bullet"></span>TestNG Assertions</span>
+            </div>
+            <p class="skill-highlight-text">
+              Leveraging foundational computer science theory to write clean, maintainable, object-oriented test automation code.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION E: PROJECTS (IMPORTANT)
+         ==================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Software Testing &amp; Automation Projects</h2>
+          <p class="section-subtitle">Real-world framework implementations, automated test suites, and manual testing matrices directly backed by GitHub repositories.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects (4)</button>
+          <button class="filter-btn" data-filter="automation">Automation Testing</button>
+          <button class="filter-btn" data-filter="manual">Manual Testing</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: OrangeHRM Automation Framework -->
+          <article class="project-card" data-category="automation" id="project-orangehrm">
+            <div class="project-media-wrap">
+              <img src="assets/images/orangehrm_preview.jpg" alt="OrangeHRM Test Automation Suite Dashboard Preview" class="project-img" loading="lazy">
+              <span class="project-overlay-badge badge-auto">Automation Framework</span>
+              <div class="project-repo-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Verified</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-name">OrangeHRM &mdash; Automation Framework</h3>
+              <p class="project-desc">
+                Developed an end-to-end test automation framework using TestNG, Core Java, Selenium WebDriver, and Maven built on the Page Object Model (POM) design pattern.
+              </p>
+
+              <!-- Coverage Box -->
+              <div class="project-coverage-box">
+                <div class="coverage-title">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Key Features &amp; Testing Coverage
+                </div>
+                <ul class="coverage-list">
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Applied OOP concepts: classes, inheritance, encapsulation, abstraction, and constructors.</span>
+                  </li>
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Implemented explicit waits and assertions to synchronize and validate login scenarios.</span>
+                  </li>
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Validated multi-module workflows: Admin, PIM, Leave, Dashboard, Recruitment, and Time.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tech Tags -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">Selenium WebDriver</span>
+                <span class="tech-tag">TestNG</span>
+                <span class="tech-tag">Core Java</span>
+                <span class="tech-tag">POM</span>
+                <span class="tech-tag">Maven</span>
+                <span class="tech-tag">Playwright TS</span>
+              </div>
+
+              <!-- Action Footer with View on GitHub -->
+              <div class="project-footer">
+                <button class="btn btn-secondary btn-sm view-project-details-btn" data-project="orangehrm">
+                  Inspect Architecture
+                </button>
+                <a href="https://github.com/nadiyasherief186arc/Orange-Automation-Playwright" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  View on GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Automation Testing Practice Lab -->
+          <article class="project-card" data-category="automation" id="project-automation-practice">
+            <div class="project-media-wrap">
+              <img src="assets/images/automation_practice_preview.jpg" alt="Web Automation Testing Lab Dashboard Preview" class="project-img" loading="lazy">
+              <span class="project-overlay-badge badge-auto">Automation Practice</span>
+              <div class="project-repo-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Verified</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-name">Automation Testing Practice Lab</h3>
+              <p class="project-desc">
+                Automated web application testing targeting complex dynamic elements, user gesture simulations, and browser event synchronizations.
+              </p>
+
+              <!-- Coverage Box -->
+              <div class="project-coverage-box">
+                <div class="coverage-title">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Key Features &amp; Testing Coverage
+                </div>
+                <ul class="coverage-list">
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Automated and validated various web elements and user interactions using Java, Selenium, &amp; Playwright.</span>
+                  </li>
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Implemented test suites for Drag &amp; Drop, Mouse Hover, Multiple Window Handling, and File Uploads.</span>
+                  </li>
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Synchronized keyboard combinations and dynamic element loading states with assertions.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tech Tags -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">Playwright</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Selenium WebDriver</span>
+                <span class="tech-tag">TestNG</span>
+                <span class="tech-tag">Maven</span>
+              </div>
+
+              <!-- Action Footer with View on GitHub -->
+              <div class="project-footer">
+                <button class="btn btn-secondary btn-sm view-project-details-btn" data-project="automation_practice">
+                  Inspect Test Specs
+                </button>
+                <a href="https://github.com/nadiyasherief186arc/Playwright_automation_Testing_Project" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  View on GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Sauce Demo (Swag Labs) E-Commerce -->
+          <article class="project-card" data-category="manual" id="project-saucedemo">
+            <div class="project-media-wrap">
+              <img src="assets/images/saucedemo_preview.jpg" alt="Sauce Demo Swag Labs QA Dashboard Preview" class="project-img" loading="lazy">
+              <span class="project-overlay-badge badge-manual">Manual Testing</span>
+              <div class="project-repo-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Verified</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-name">Sauce Demo (Swag Labs) E-Commerce QA</h3>
+              <p class="project-desc">
+                Conducted rigorous manual testing of user flows across product catalogs, stateful shopping cart items, checkout tax computation, and session edge conditions.
+              </p>
+
+              <!-- Coverage Box -->
+              <div class="project-coverage-box">
+                <div class="coverage-title">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Key Features &amp; Testing Coverage
+                </div>
+                <ul class="coverage-list">
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Analysed application requirements and designed test cases for Functional, Usability, &amp; Compatibility testing.</span>
+                  </li>
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Executed detailed scenarios for Login personas, Product Listing filters, Cart mutations, and Checkout.</span>
+                  </li>
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Identified, categorized, and documented defects with steps to reproduce and severity levels.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tech Tags -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">Manual Testing</span>
+                <span class="tech-tag">Functional QA</span>
+                <span class="tech-tag">Usability Testing</span>
+                <span class="tech-tag">Cross-Browser Testing</span>
+                <span class="tech-tag">Excel Matrix</span>
+              </div>
+
+              <!-- Action Footer with View on GitHub -->
+              <div class="project-footer">
+                <button class="btn btn-secondary btn-sm view-project-details-btn" data-project="saucedemo">
+                  Inspect Test Matrix
+                </button>
+                <a href="https://github.com/nadiyasherief186arc/Source-Demo" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  View on GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: OBS Automobiles Application -->
+          <article class="project-card" data-category="manual" id="project-obs-auto">
+            <div class="project-media-wrap">
+              <img src="assets/images/obs_auto_preview.jpg" alt="OBS Automobiles QA Dashboard Preview" class="project-img" loading="lazy">
+              <span class="project-overlay-badge badge-manual">Manual Testing</span>
+              <div class="project-repo-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>GitHub Verified</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-name">OBS Automobiles Application QA</h3>
+              <p class="project-desc">
+                Requirement-driven software testing for an automotive service platform encompassing Customer, Service Provider, and Admin enterprise modules.
+              </p>
+
+              <!-- Coverage Box -->
+              <div class="project-coverage-box">
+                <div class="coverage-title">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Key Features &amp; Testing Coverage
+                </div>
+                <ul class="coverage-list">
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Analysed SRS document and prepared test cases for Customer, Service Provider, and Admin Module.</span>
+                  </li>
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Executed manual test cases for Login, Registration, and booking functionalities in the Customer Module.</span>
+                  </li>
+                  <li class="coverage-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Performed Smoke, Functional, and UI Testing; managed defect life cycle in JIRA.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Tech Tags -->
+              <div class="project-tech-tags">
+                <span class="tech-tag">STLC &amp; SDLC</span>
+                <span class="tech-tag">SRS Analysis</span>
+                <span class="tech-tag">JIRA Bug Tracking</span>
+                <span class="tech-tag">Smoke Testing</span>
+                <span class="tech-tag">UI Testing</span>
+                <span class="tech-tag">Excel</span>
+              </div>
+
+              <!-- Action Footer with View on GitHub -->
+              <div class="project-footer">
+                <button class="btn btn-secondary btn-sm view-project-details-btn" data-project="obs_auto">
+                  Inspect SRS Details
+                </button>
+                <a href="https://github.com/nadiyasherief186arc/NadiyaSherief-Portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  View on GitHub
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION: INTERACTIVE QA TEST SUITE RUNNER PLAYGROUND
+         ==================================================================== -->
+    <section class="section" id="qa-lab" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive QA Playground</span>
+          <h2 class="section-title">Live Test Suite Simulator</h2>
+          <p class="section-subtitle">Experience how my automated test suites execute in real-time with step assertions, status updates, and live logs.</p>
+        </div>
+
+        <div class="qa-playground-card">
+          <!-- Playground Top Header Bar -->
+          <div class="playground-top-bar">
+            <div class="playground-tab-title">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <span>QA Automation Runner • v2.4 (Headless Chromium)</span>
+            </div>
+
+            <div class="suite-selector-wrap">
+              <label for="playgroundSuiteSelect" style="font-size:0.8rem; color:var(--text-muted); font-family:var(--font-mono);">Active Suite:</label>
+              <select id="playgroundSuiteSelect" class="suite-select">
+                <option value="orangehrm">OrangeHRM POM Auth Suite</option>
+                <option value="playwright">Playwright Web Gestures Suite</option>
+                <option value="saucedemo">Swag Labs Checkout Suite</option>
+                <option value="api_postman">REST API Validation Suite</option>
+              </select>
+              <button class="btn btn-primary btn-sm" id="runTestSuiteBtn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Run Test Suite
+              </button>
+            </div>
+          </div>
+
+          <!-- Playground Inner Grid -->
+          <div class="playground-content-grid">
+            <!-- Left: Steps & Assertions Queue -->
+            <div class="playground-left">
+              <div class="playground-suite-info">
+                <h4 class="playground-suite-name" id="playgroundSuiteName">OrangeHRM Automation Suite</h4>
+                <p class="playground-suite-desc" id="playgroundSuiteDesc">Validates Login, explicit synchronization, PIM personnel creation, and Dashboard telemetry.</p>
+              </div>
+
+              <div class="playground-assertions-list" id="playgroundStepsContainer">
+                <!-- Dynamically populated by JS -->
+              </div>
+
+              <div style="margin-top:auto; font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">
+                Execution Engine: TestNG 7.8 &bull; Selenium 4.x &bull; Playwright Test
+              </div>
+            </div>
+
+            <!-- Right: Live Console Terminal -->
+            <div class="playground-right">
+              <div class="console-header">
+                <span>TERMINAL OUTPUT (STDOUT)</span>
+                <button id="clearConsoleBtn" style="background:transparent; border:none; color:var(--text-muted); cursor:pointer; font-family:var(--font-mono); font-size:0.75rem;">Clear Log</button>
+              </div>
+              <div class="console-logs" id="playgroundConsoleLogs">
+                <div class="log-line">
+                  <span class="log-dim">[INITIALIZED]</span>
+                  <span class="log-info">Ready to execute tests. Click "Run Test Suite" to simulate live assertions.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION D: EXPERIENCE & EDUCATION
+         ==================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career &amp; Credentials</span>
+          <h2 class="section-title">Education &amp; Experience Timeline</h2>
+          <p class="section-subtitle">A verified academic engineering background coupled with professional QA certification and framework implementation.</p>
+        </div>
+
+        <div class="timeline-editorial-wrap">
+          
+          <!-- Timeline Item 1: Hands-on QA Experience -->
+          <div class="timeline-entry">
+            <div class="timeline-bullet"></div>
+            <div class="timeline-card">
+              <div class="timeline-top-row">
+                <h3 class="timeline-title">Software Tester &bull; Quality Assurance Specialist</h3>
+                <span class="timeline-period">Fresher / Active Portfolio Work</span>
+              </div>
+              <div class="timeline-org">Independent Automation Frameworks &amp; Test Matrices</div>
+              <p class="timeline-desc">
+                Dedicated fresher applying industry-standard STLC practices. Built modular automation suites for OrangeHRM and web application practice labs, designed exhaustive test cases for e-commerce and automotive service domains, and created structured defect matrices in JIRA.
+              </p>
+              <div class="timeline-badges">
+                <span class="skill-pill featured">Framework Architecture</span>
+                <span class="skill-pill">Page Object Model</span>
+                <span class="skill-pill">Test Case Design</span>
+                <span class="skill-pill">Bug Tracking - JIRA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Zoople Technologies Certification -->
+          <div class="timeline-entry">
+            <div class="timeline-bullet"></div>
+            <div class="timeline-card">
+              <div class="timeline-top-row">
+                <h3 class="timeline-title">3-Month Intensive Software Testing Course</h3>
+                <span class="timeline-period">08/2026 &ndash; 11/2026</span>
+              </div>
+              <div class="timeline-org">Zoople Technologies, Kochi, Kerala</div>
+              <p class="timeline-desc">
+                Comprehensive practical training in Manual Testing methodologies (Agile, STLC, SDLC, Defect Life Cycle), Automation Testing with Selenium WebDriver and Core Java, TestNG, Maven, Cucumber, API Testing with Postman, Performance Testing with JMeter, and Relational SQL data validation.
+              </p>
+              <div class="timeline-badges">
+                <span class="skill-pill featured">Selenium WebDriver</span>
+                <span class="skill-pill">TestNG</span>
+                <span class="skill-pill">Postman API</span>
+                <span class="skill-pill">JMeter</span>
+                <span class="skill-pill">SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: B.Tech Computer Science -->
+          <div class="timeline-entry">
+            <div class="timeline-bullet"></div>
+            <div class="timeline-card">
+              <div class="timeline-top-row">
+                <h3 class="timeline-title">Bachelor of Technology (B.Tech) in Computer Science</h3>
+                <span class="timeline-period">2004 &ndash; 2008</span>
+              </div>
+              <div class="timeline-org">Musaliar College of Engineering, Pathanamthitta, Kerala</div>
+              <p class="timeline-desc">
+                Graduated with foundational expertise in Computer Science and Engineering, covering Object-Oriented Programming (OOP), Data Structures, Relational Database Management Systems (RDBMS), Software Engineering principles, and system architecture.
+              </p>
+              <div class="timeline-badges">
+                <span class="skill-pill featured">Computer Science Degree</span>
+                <span class="skill-pill">OOP Architecture</span>
+                <span class="skill-pill">Database Systems</span>
+                <span class="skill-pill">Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION F: RESUME DOWNLOAD & VIEWER (IMPORTANT)
+         ==================================================================== -->
+    <section class="section" id="resume" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Official Documentation</span>
+          <h2 class="section-title">My Resume</h2>
+          <p class="section-subtitle">Download or inspect my complete curriculum vitae featuring testing proficiencies, framework architectures, and academic background.</p>
+        </div>
+
+        <div class="resume-feature-card">
+          <!-- Left: Information & Action Buttons -->
+          <div class="resume-info-block">
+            <h3 class="resume-heading">Curriculum Vitae</h3>
+            <p class="resume-desc-text">
+              Comprehensive resume prepared for Technical Recruiters and QA Hiring Managers. Contains verified skills in Manual Testing, Selenium WebDriver, Playwright, TestNG, Core Java, Postman API testing, defect lifecycle procedures, and academic qualifications.
+            </p>
+
+            <div class="resume-button-group">
+              <!-- Direct Download PDF Button -->
+              <a href="assets/resume/Nadiya_Sherief_Resume.pdf" download="Nadiya_Sherief_Resume.pdf" class="btn btn-primary" id="downloadResumePdfBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Download Resume (PDF)
+              </a>
+
+              <!-- View Resume in New Tab -->
+              <a href="assets/resume/resume.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="viewResumeTabBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                View in New Tab
+              </a>
+
+              <!-- Quick Modal Preview Button -->
+              <button class="btn btn-secondary" id="quickResumePreviewBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                Quick Preview
+              </button>
+            </div>
+
+            <div style="margin-top: 24px; font-size: 0.82rem; color: var(--text-muted); display:flex; align-items:center; gap:8px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Verified ATS-Friendly Format &bull; Standard PDF Ready</span>
+            </div>
+          </div>
+
+          <!-- Right: Visual Mini-Preview Mockup Card -->
+          <div class="resume-mini-preview">
+            <div class="preview-top-name">NADIYA SHERIEF</div>
+            <div class="preview-top-role">Software Tester &bull; QA Engineer</div>
+            <p style="font-size: 9.5px; color: #475569; margin-bottom: 8px;">
+              Computer Science graduate with knowledge in Manual Testing, Automation Testing, Java, Selenium WebDriver, TestNG, Maven, SQL, JMeter, Postman, Git and GitHub.
+            </p>
+            <div class="preview-mini-grid">
+              <div class="preview-col">
+                <div class="preview-col-title">Core Skills</div>
+                <p>&bull; Selenium WebDriver</p>
+                <p>&bull; Core Java &amp; TestNG</p>
+                <p>&bull; Page Object Model</p>
+                <p>&bull; Postman &amp; JMeter</p>
+                <p>&bull; JIRA &amp; Agile STLC</p>
+              </div>
+              <div class="preview-col">
+                <div class="preview-col-title">Key Projects</div>
+                <p>&bull; OrangeHRM Automation Framework</p>
+                <p>&bull; Web Elements Interaction Lab</p>
+                <p>&bull; Sauce Demo E-Commerce QA</p>
+                <p>&bull; OBS Automobiles Manual QA</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION: CONTACT ME
+         ==================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">Interested in discussing software testing opportunities, QA frameworks, or test automation roles? Feel free to reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Direct Channels -->
+          <div class="contact-info-list">
+            
+            <!-- Email -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <div class="contact-card-label">Email Address</div>
+                <a href="mailto:nadiyasherief186@gmail.com" class="contact-card-val">nadiyasherief186@gmail.com</a>
+              </div>
+              <button class="copy-btn copy-email-btn" aria-label="Copy email address to clipboard">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copy
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <div class="contact-card-label">Direct Phone</div>
+                <a href="tel:+919447602945" class="contact-card-val">+91 9447602945</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <div class="contact-card-label">Current Location</div>
+                <div class="contact-card-val">Kollam, Kerala, India</div>
+              </div>
+            </div>
+
+            <!-- GitHub Profile -->
+            <div class="contact-card-item">
+              <div class="contact-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <div class="contact-card-label">GitHub Repositories</div>
+                <a href="https://github.com/nadiyasherief186arc" target="_blank" rel="noopener noreferrer" class="contact-card-val">github.com/nadiyasherief186arc</a>
+              </div>
+              <a href="https://github.com/nadiyasherief186arc" target="_blank" rel="noopener noreferrer" class="copy-btn">
+                Visit &rarr;
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.3rem; font-weight: 700; margin-bottom: 8px;">Send a Direct Message</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 24px;">
+              Looking forward to opportunities in Software Testing and QA Automation.
+            </p>
+
+            <form id="portfolioContactForm">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name *</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Hiring Manager / Recruiter" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Your Email *</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" class="form-input" placeholder="QA Role Opportunity / Interview Request">
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message *</label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Hello Nadiya, we are impressed by your test automation background and would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="footer-copy">
+          &copy; 2026 <strong>Nadiya Sherief</strong> &bull; All Rights Reserved.
+        </div>
+        <div class="footer-credit">
+          Software Tester &bull; Quality Assurance Engineer &bull; Kollam, Kerala, India
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="footer-back-to-top">
+          Back to Top
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       GLOBAL MODAL DIALOG
+       ==================================================================== -->
+  <div class="modal-overlay" id="globalModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content-box">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Project Details</h3>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

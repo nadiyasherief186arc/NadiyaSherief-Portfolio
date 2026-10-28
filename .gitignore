@@ -1,0 +1,14 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Logs & Diagnostics
+*.log
+npm-debug.log*
+
+# Node modules (if any packages installed later)
+node_modules/
+
+# Local build / temp
+.temp/
+dist/

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadiya Sherief - Software Tester Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --bg-subtle: #f8fafc;
+      --card-bg: #ffffff;
+      --accent: #2563eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-main);
+      background-color: #f1f5f9;
+      line-height: 1.5;
+      font-size: 13px;
+      padding: 24px;
+    }
+
+    .resume-actions-bar {
+      max-width: 850px;
+      margin: 0 auto 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 12px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border: 1px solid var(--border);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background: #f1f5f9;
+      color: var(--text-main);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: #e2e8f0;
+    }
+
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      padding: 36px 40px;
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 20px;
+      margin-bottom: 22px;
+    }
+
+    .name-title h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .name-title h2 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .contact-info {
+      text-align: right;
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+    }
+
+    .contact-item a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .contact-item a:hover {
+      color: var(--primary);
+    }
+
+    /* SUMMARY */
+    .section-title {
+      font-size: 12.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .summary-text {
+      font-size: 12.5px;
+      color: #334155;
+      line-height: 1.6;
+      margin-bottom: 22px;
+      text-align: justify;
+    }
+
+    /* TWO COLUMN LAYOUT */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 28px;
+    }
+
+    /* SIDEBAR (SKILLS, EDUCATION) */
+    .sidebar-section {
+      margin-bottom: 22px;
+    }
+
+    .skill-group {
+      margin-bottom: 14px;
+    }
+
+    .skill-group-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 5px;
+    }
+
+    .skill-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      color: #334155;
+    }
+
+    .badge-accent {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+      color: #1d4ed8;
+      font-weight: 600;
+    }
+
+    /* TIMELINE / EDUCATION */
+    .edu-item {
+      margin-bottom: 14px;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      font-size: 12px;
+      color: #0f172a;
+    }
+
+    .edu-inst {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+
+    .edu-year {
+      font-size: 11px;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--primary);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    /* MAIN COLUMN (PROJECTS) */
+    .project-item {
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+
+    .project-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .project-name {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .project-tag {
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tag-auto {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+
+    .tag-manual {
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+
+    .project-tech {
+      font-size: 11.5px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #0284c7;
+      margin-bottom: 6px;
+    }
+
+    .project-bullets {
+      list-style-type: disc;
+      padding-left: 16px;
+      font-size: 12px;
+      color: #334155;
+      line-height: 1.55;
+    }
+
+    .project-bullets li {
+      margin-bottom: 3px;
+    }
+
+    .repo-link {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 11px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .repo-link:hover {
+      text-decoration: underline;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+        margin: 0;
+      }
+      .resume-actions-bar {
+        display: none !important;
+      }
+      .resume-container {
+        border: none;
+        box-shadow: none;
+        padding: 20px 24px;
+        max-width: 100%;
+      }
+      @page {
+        margin: 10mm;
+        size: A4 portrait;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-actions-bar">
+    <div>
+      <strong>Nadiya Sherief</strong> &mdash; Software Tester Resume
+    </div>
+    <div style="display:flex; gap:10px;">
+      <button class="btn btn-primary" onclick="window.print()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+        Print / Save as PDF
+      </button>
+      <a href="./Nadiya_Sherief_Resume.pdf" download="Nadiya_Sherief_Resume.pdf" class="btn btn-secondary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Download PDF
+      </a>
+      <a href="../../index.html" class="btn btn-secondary">Back to Portfolio</a>
+    </div>
+  </div>
+
+  <div class="resume-container">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="name-title">
+        <h1>Nadiya Sherief</h1>
+        <h2>Software Tester &bull; QA Engineer</h2>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span>Mail:</span>
+          <a href="mailto:nadiyasherief186@gmail.com">nadiyasherief186@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span>Phone:</span>
+          <a href="tel:+919447602945">+91 9447602945</a>
+        </div>
+        <div class="contact-item">
+          <span>Location:</span>
+          <span>Kollam, Kerala, India</span>
+        </div>
+        <div class="contact-item">
+          <span>GitHub:</span>
+          <a href="https://github.com/nadiyasherief186arc" target="_blank" rel="noopener">github.com/nadiyasherief186arc</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- SUMMARY -->
+    <section>
+      <div class="section-title">Profile Summary</div>
+      <p class="summary-text">
+        Computer Science graduate with in-depth knowledge in Manual Testing, Automation Testing, Core Java, Selenium WebDriver, TestNG, Page Object Model (POM), Maven, SQL, JMeter, Postman, Git and GitHub. Skilled in writing and executing test cases, scenario design, defect lifecycle reporting, and web element interaction automation. Familiar with SDLC, STLC, Agile Scrum methodology, and defect tracking using JIRA. Seeking a Software Testing role to apply my skills, deliver robust test coverage, and gain hands-on industry experience.
+      </p>
+    </section>
+
+    <!-- CONTENT GRID -->
+    <div class="content-grid">
+      <!-- SIDEBAR -->
+      <aside>
+        <section class="sidebar-section">
+          <div class="section-title">Technical Skills</div>
+
+          <div class="skill-group">
+            <div class="skill-group-title">Automation Testing</div>
+            <div class="skill-badges">
+              <span class="badge badge-accent">Selenium WebDriver</span>
+              <span class="badge badge-accent">Core Java (OOPs)</span>
+              <span class="badge badge-accent">Page Object Model</span>
+              <span class="badge badge-accent">TestNG</span>
+              <span class="badge badge-accent">Maven</span>
+              <span class="badge badge-accent">Cucumber</span>
+              <span class="badge badge-accent">Playwright</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-title">Manual Testing</div>
+            <div class="skill-badges">
+              <span class="badge">Agile Methodology</span>
+              <span class="badge">STLC & SDLC</span>
+              <span class="badge">Defect Life Cycle</span>
+              <span class="badge">Test Case Design</span>
+              <span class="badge">Scenario Design</span>
+              <span class="badge">Smoke & Sanity</span>
+              <span class="badge">Functional Testing</span>
+              <span class="badge">UI / Compatibility</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-title">API & Performance</div>
+            <div class="skill-badges">
+              <span class="badge">API Testing - Postman</span>
+              <span class="badge">Performance - JMeter</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-title">Database & Tools</div>
+            <div class="skill-badges">
+              <span class="badge">SQL Queries</span>
+              <span class="badge">Bug Tracking - JIRA</span>
+              <span class="badge">Excel Test Matrix</span>
+              <span class="badge">Git & GitHub</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="sidebar-section">
+          <div class="section-title">Education & Certification</div>
+
+          <div class="edu-item">
+            <div class="edu-degree">3-Month Offline Software Testing</div>
+            <div class="edu-inst">Zoople Technologies, Kochi</div>
+            <div class="edu-year">08/2026 &ndash; 11/2026</div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-degree">B.Tech in Computer Science</div>
+            <div class="edu-inst">Musaliar College of Engineering, Pathanamthitta</div>
+            <div class="edu-year">2004 &ndash; 2008</div>
+          </div>
+        </section>
+
+        <section class="sidebar-section">
+          <div class="section-title">Experience</div>
+          <div class="edu-item">
+            <div class="edu-degree">Software Testing &bull; Fresher</div>
+            <div class="edu-inst">Hands-on Academic & Framework Projects</div>
+            <div class="edu-year">Ready for Industry Roles</div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- MAIN CONTENT (PROJECTS) -->
+      <main>
+        <section>
+          <div class="section-title">Projects</div>
+
+          <!-- Project 1 -->
+          <div class="project-item">
+            <div class="project-header">
+              <div class="project-name">1. OrangeHRM &mdash; Automation Project</div>
+              <span class="project-tag tag-auto">Automation</span>
+            </div>
+            <div class="project-tech">Tech: TestNG, Java, Selenium WebDriver, Maven, POM, Playwright TS</div>
+            <ul class="project-bullets">
+              <li>Developed an end-to-end automation framework using Page Object Model (POM) and TestNG.</li>
+              <li>Applied core OOP concepts including classes, objects, inheritance, encapsulation, abstraction, polymorphism, constructors, and static members.</li>
+              <li>Automated comprehensive workflows for Login, Admin, PIM, Leave, Dashboard, Recruitment, and Time modules.</li>
+              <li>Implemented explicit waits and assertions to synchronize and validate login scenarios and data tables.</li>
+            </ul>
+            <a class="repo-link" href="https://github.com/nadiyasherief186arc/Orange-Automation-Playwright" target="_blank" rel="noopener">&rarr; View Repository on GitHub</a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-item">
+            <div class="project-header">
+              <div class="project-name">2. Automation Testing Practice</div>
+              <span class="project-tag tag-auto">Automation</span>
+            </div>
+            <div class="project-tech">Tech: Java, Selenium WebDriver, TestNG, Maven, Playwright, POM</div>
+            <ul class="project-bullets">
+              <li>Automated web application testing targeting dynamic web elements and complex user interactions.</li>
+              <li>Implemented automation suites for Drag & Drop, Mouse Hover, Multiple Window Handling, Multiple File Upload, and Keyboard actions.</li>
+              <li>Validated element states, sync timeouts, and form inputs using robust assertions.</li>
+            </ul>
+            <a class="repo-link" href="https://github.com/nadiyasherief186arc/Playwright_automation_Testing_Project" target="_blank" rel="noopener">&rarr; View Repository on GitHub</a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-item">
+            <div class="project-header">
+              <div class="project-name">3. OBS Automobiles Application &mdash; Manual Testing</div>
+              <span class="project-tag tag-manual">Manual Testing</span>
+            </div>
+            <div class="project-tech">Tech: STLC, SDLC, SRS Analysis, JIRA Bug Tracking, Smoke & UI Testing</div>
+            <ul class="project-bullets">
+              <li>Analysed SRS requirement documents and authored comprehensive test cases for Customer, Service Provider, and Admin Modules.</li>
+              <li>Executed manual test cases for Login, Registration, and booking functionalities in the Customer Module.</li>
+              <li>Performed Smoke, Functional, and UI Testing; documented and tracked defects across the Defect Life Cycle using JIRA.</li>
+            </ul>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-item">
+            <div class="project-header">
+              <div class="project-name">4. Sauce Demo (Swag Labs) E-Commerce &mdash; Manual Testing</div>
+              <span class="project-tag tag-manual">Manual Testing</span>
+            </div>
+            <div class="project-tech">Tech: Requirement Analysis, Functional, Usability & Compatibility Testing</div>
+            <ul class="project-bullets">
+              <li>Analysed application requirements and designed test cases covering Login, Product Listing, Cart, and Checkout modules.</li>
+              <li>Executed Functional, Performance, Usability, and Cross-Browser Compatibility test scenarios.</li>
+              <li>Identified, logged, and documented defects with steps to reproduce and severity classification.</li>
+            </ul>
+            <a class="repo-link" href="https://github.com/nadiyasherief186arc/Source-Demo" target="_blank" rel="noopener">&rarr; View Repository on GitHub</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>
